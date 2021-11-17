@@ -1,0 +1,51 @@
+<template>
+    <div class="slds-grid slds-gutters slds-grid_align-spread">
+        <div class="slds-col column">
+            <button
+                class="info-and-button"
+                onclick={handleToOrderInfoRecordPage}
+                >
+                <div class="slds-grid slds-gutters slds-grid_align-spread">
+                    <div class="info-column">
+                        <p>Order name:</p>
+                        <p>Price:</p>
+                    </div>
+                    <div class="data-column">
+                        <p>{orderInfo.Name}</p>
+                        <p>{orderInfo.Price__c}</p>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div class="slds-col column">
+            <button
+                class="info-and-button"
+                onclick={handleToCustomerInfoRecordPage}>
+                <div class="slds-grid slds-gutters slds-grid_align-spread">
+                    <div class="info-column">
+                        <p>Shop name:</p>
+                    </div>
+                    <div class="data-column">
+                        <p>{orderInfo.Shop__r.Name}</p>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div class="slds-col column">
+            <button
+                class="info-and-button"
+                onclick={handleToShopInfoRecordPage}>
+                <div class="slds-grid slds-gutters slds-grid_align-spread">
+                    <div class="info-column">
+                        <p>Name:</p>
+                        <p>Surname:</p>
+                    </div>
+                    <div class="data-column">
+                        <p>{orderInfo.CustomerInfo__r.Name}</p>
+                        <p>{orderInfo.CustomerInfo__r.Surname__c}</p>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+</template>

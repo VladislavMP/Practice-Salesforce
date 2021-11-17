@@ -1,0 +1,20 @@
+.info-and-button {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(49, 49, 49);
+    height: 6em;
+    margin-top: 0.5em;
+}
+.column {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.info-column {
+    width: 20%;
+    text-align: right;
+}
+.data-column {
+    width: 70%;
+    text-align: left;
+    margin-left: 0em;
+}

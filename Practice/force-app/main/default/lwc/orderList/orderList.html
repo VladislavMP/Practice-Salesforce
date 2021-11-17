@@ -1,0 +1,10 @@
+<template>
+    <template for:each={orderInfoList} for:item="orderInfo">
+        <div key={orderInfo.Id}>
+            <c-order-item   
+                key={orderInfo.Id}
+                order-info={orderInfo}>
+            </c-order-item>
+        </div>
+    </template>
+</template>
